@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhance Clipboard - Clipboard History Manager for macOS</title>
+  <meta name="description" content="Enhance Clipboard is a lightweight clipboard history manager for macOS. Open history instantly, pin important clips, and paste faster with keyboard shortcuts.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://enhanceclipboard.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Enhance Clipboard - Clipboard History Manager for macOS">
+  <meta property="og:description" content="Open clipboard history instantly, pin important snippets, and paste faster on macOS.">
+  <meta property="og:url" content="https://enhanceclipboard.com/">
+  <meta property="og:site_name" content="Enhance Clipboard">
+  <meta property="og:image" content="https://enhanceclipboard.com/images/1.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Enhance Clipboard - Clipboard History Manager for macOS">
+  <meta name="twitter:description" content="Fast, minimal clipboard history for macOS with keyboard-first workflow.">
+  <meta name="twitter:image" content="https://enhanceclipboard.com/images/1.png">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+
+  <header class="nav glass">
+    <div class="brand">
+      <span class="brand-dot"></span>
+      <span>Enhance Clipboard</span>
+    </div>
+    <div class="nav-actions">
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero glass reveal" data-reveal>
+      <p class="eyebrow">macOS Clipboard Manager</p>
+      <h1>Clipboard history that feels native.</h1>
+      <p class="subtitle">
+        Open your history instantly, navigate with keyboard, pin important snippets,
+        and paste exactly what you need.
+      </p>
+      <div class="hero-actions" id="download">
+        <a class="btn btn-primary" href="https://enhanceclipboard.com/Enhance%20Clipboard-0.1.0.dmg">Download for macOS</a>
+      </div>
+      <p class="hint">Current beta supports text and images.</p>
+    </section>
+
+    <section class="screenshots reveal" data-reveal>
+      <div class="screenshot-head">
+        <h2>App Screenshots</h2>
+        <p>A quick look at the core Enhance Clipboard experience.</p>
+      </div>
+      <div class="screenshot-grid">
+        <figure class="shot glass">
+          <img src="./images/1.png" alt="Enhance Clipboard main panel">
+        </figure>
+        <figure class="shot glass">
+          <img src="./images/2.png" alt="Settings window">
+        </figure>
+        <figure class="shot glass">
+          <img src="./images/3.png" alt="About window">
+        </figure>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <article class="card glass reveal" data-reveal>
+        <h3>Instant access</h3>
+        <p>Use your hotkey to open history right where you work.</p>
+      </article>
+      <article class="card glass reveal" data-reveal>
+        <h3>Keyboard-first</h3>
+        <p>Navigate with arrows, confirm with Enter, close with Esc.</p>
+      </article>
+      <article class="card glass reveal" data-reveal>
+        <h3>Clean UI</h3>
+        <p>Minimal glass design inspired by native macOS aesthetics.</p>
+      </article>
+      <article class="card glass reveal" data-reveal>
+        <h3>Pin & organize</h3>
+        <p>Keep important clips on top and clear old history quickly.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Enhance Clipboard</span>
+    <span class="footer-divider">•</span>
+    <span>Made for macOS</span>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close preview">Close</button>
+    <img id="lightbox-image" alt="">
+  </div>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Enhance Clipboard",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "macOS",
+      "description": "Clipboard history manager for macOS with keyboard-first navigation and quick paste workflow.",
+      "url": "https://enhanceclipboard.com/"
+    }
+  </script>
+  <script src="./script.js"></script>
+</body>
+</html>
