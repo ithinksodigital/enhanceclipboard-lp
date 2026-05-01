@@ -228,6 +228,133 @@ h1 {
   gap: 12px;
 }
 
+.section-block {
+  margin-top: 26px;
+  padding: 20px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.section-cards {
+  margin-top: 12px;
+}
+
+.section-features {
+  background: linear-gradient(180deg, rgba(35, 22, 66, 0.54) 0%, rgba(20, 14, 41, 0.5) 100%);
+}
+
+.section-faq {
+  background: linear-gradient(180deg, rgba(16, 40, 58, 0.56) 0%, rgba(11, 27, 40, 0.52) 100%);
+}
+
+.section-privacy {
+  background: linear-gradient(180deg, rgba(16, 46, 36, 0.56) 0%, rgba(10, 30, 24, 0.5) 100%);
+}
+
+.section-features .card {
+  border: 1px solid rgba(152, 126, 255, 0.34);
+  background: rgba(17, 11, 34, 0.72);
+}
+
+.section-faq .card {
+  border: 1px solid rgba(99, 204, 255, 0.36);
+  background: rgba(8, 22, 35, 0.74);
+}
+
+.section-privacy .card {
+  border: 1px solid rgba(110, 220, 171, 0.36);
+  background: rgba(10, 24, 20, 0.74);
+}
+
+.section-block .screenshot-head h2 {
+  font-size: 1.22rem;
+}
+
+.section-block .screenshot-head p {
+  margin-top: 8px;
+}
+
+.section-block .screenshot-head {
+  padding-left: 12px;
+  border-left: 3px solid rgba(255, 255, 255, 0.24);
+}
+
+.section-features .screenshot-head {
+  border-left-color: rgba(152, 126, 255, 0.72);
+}
+
+.section-faq .screenshot-head {
+  border-left-color: rgba(99, 204, 255, 0.78);
+}
+
+.section-privacy .screenshot-head {
+  border-left-color: rgba(110, 220, 171, 0.78);
+}
+
+.faq-list {
+  margin-top: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.faq-item {
+  border: 1px solid rgba(99, 204, 255, 0.4);
+  border-radius: 12px;
+  background: rgba(8, 22, 35, 0.74);
+  padding: 12px 14px;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  float: right;
+  color: rgba(99, 204, 255, 0.9);
+}
+
+.faq-item[open] summary::after {
+  content: "-";
+}
+
+.faq-item p {
+  margin: 10px 0 2px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.privacy-grid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.privacy-item {
+  border: 1px dashed rgba(110, 220, 171, 0.46);
+  border-radius: 12px;
+  background: rgba(10, 24, 20, 0.66);
+  padding: 14px;
+}
+
+.privacy-item h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.privacy-item p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .card {
   border-radius: 14px;
   padding: 16px;
@@ -318,6 +445,10 @@ h1 {
   }
 
   .features {
+    grid-template-columns: 1fr;
+  }
+
+  .privacy-grid {
     grid-template-columns: 1fr;
   }
 

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Enhance Clipboard - Clipboard History Manager for macOS</title>
-  <meta name="description" content="Enhance Clipboard is a lightweight clipboard history manager for macOS. Open history instantly, pin important clips, and paste faster with keyboard shortcuts.">
+  <meta name="description" content="Enhance Clipboard is a clipboard history manager for Apple Silicon macOS. Find copied text and images instantly, pin important clips, and paste faster with keyboard shortcuts.">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://enhanceclipboard.com/">
 
@@ -13,12 +13,18 @@
   <meta property="og:description" content="Open clipboard history instantly, pin important snippets, and paste faster on macOS.">
   <meta property="og:url" content="https://enhanceclipboard.com/">
   <meta property="og:site_name" content="Enhance Clipboard">
+  <meta property="og:locale" content="en_US">
   <meta property="og:image" content="https://enhanceclipboard.com/images/1.png">
+  <meta property="og:image:alt" content="Enhance Clipboard app window showing clipboard history on macOS">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Enhance Clipboard - Clipboard History Manager for macOS">
   <meta name="twitter:description" content="Fast, minimal clipboard history for macOS with keyboard-first workflow.">
+  <meta name="twitter:site" content="@enhanceclipboard">
   <meta name="twitter:image" content="https://enhanceclipboard.com/images/1.png">
+  <meta name="twitter:image:alt" content="Enhance Clipboard app window showing clipboard history on macOS">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
 
   <link rel="stylesheet" href="./styles.css">
 </head>
@@ -68,7 +74,7 @@
       </div>
     </section>
 
-    <section id="features" class="features">
+    <section id="features" class="features section-block section-features reveal" data-reveal>
       <article class="card glass reveal" data-reveal>
         <h3>Instant access</h3>
         <p>Use your hotkey to open history right where you work.</p>
@@ -85,6 +91,51 @@
         <h3>Pin & organize</h3>
         <p>Keep important clips on top and clear old history quickly.</p>
       </article>
+    </section>
+
+    <section class="screenshots section-block section-faq reveal" data-reveal aria-labelledby="faq-title">
+      <div class="screenshot-head">
+        <h2 id="faq-title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item reveal" data-reveal>
+          <summary>Is Enhance Clipboard free?</summary>
+          <p>Yes. Enhance Clipboard is free to download and use on macOS.</p>
+        </details>
+        <details class="faq-item reveal" data-reveal>
+          <summary>What can it save?</summary>
+          <p>Current beta supports text and images from your clipboard history.</p>
+        </details>
+        <details class="faq-item reveal" data-reveal>
+          <summary>How do I open clipboard history quickly?</summary>
+          <p>Use your configured global shortcut to open history and paste with keyboard navigation.</p>
+        </details>
+        <details class="faq-item reveal" data-reveal>
+          <summary>Which macOS versions are supported?</summary>
+          <p>Enhance Clipboard currently supports Apple Silicon Macs running current macOS versions.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="screenshots section-block section-privacy reveal" data-reveal aria-labelledby="privacy-title">
+      <div class="screenshot-head">
+        <h2 id="privacy-title">Privacy</h2>
+        <p>Clipboard history is designed to stay simple, local, and under your control.</p>
+      </div>
+      <div class="privacy-grid">
+        <article class="privacy-item reveal" data-reveal>
+          <h3>Local-first storage</h3>
+          <p>Your clipboard history stays on your Mac and is not synced to external servers.</p>
+        </article>
+        <article class="privacy-item reveal" data-reveal>
+          <h3>No account required</h3>
+          <p>You can install and use Enhance Clipboard without creating an online account.</p>
+        </article>
+        <article class="privacy-item reveal" data-reveal>
+          <h3>Clear controls</h3>
+          <p>Pin important clips, remove entries quickly, and keep only what you need.</p>
+        </article>
+      </div>
     </section>
   </main>
 
@@ -105,9 +156,58 @@
       "@type": "SoftwareApplication",
       "name": "Enhance Clipboard",
       "applicationCategory": "UtilitiesApplication",
-      "operatingSystem": "macOS",
+      "applicationSubCategory": "Clipboard Manager",
+      "operatingSystem": "macOS (Apple Silicon)",
       "description": "Clipboard history manager for macOS with keyboard-first navigation and quick paste workflow.",
-      "url": "https://enhanceclipboard.com/"
+      "url": "https://enhanceclipboard.com/",
+      "downloadUrl": "https://enhanceclipboard.com/updates/Enhance%20Clipboard-0.1.0.dmg",
+      "softwareVersion": "0.1.0",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Enhance Clipboard free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Enhance Clipboard is free to download and use on macOS."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What can it save?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Current beta supports text and images from your clipboard history."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I open clipboard history quickly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use your configured global shortcut to open history and paste with keyboard navigation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which macOS versions are supported?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enhance Clipboard currently supports Apple Silicon Macs running current macOS versions."
+          }
+        }
+      ]
     }
   </script>
   <script src="./script.js"></script>
