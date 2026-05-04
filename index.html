@@ -6,149 +6,172 @@
   <title>Enhance Clipboard - Clipboard History Manager for macOS</title>
   <meta name="description" content="Enhance Clipboard is a clipboard history manager for Apple Silicon macOS. Find copied text and images instantly, pin important clips, and paste faster with keyboard shortcuts.">
   <meta name="robots" content="index,follow,max-image-preview:large">
-  <link rel="canonical" href="https://enhanceclipboard.com/">
+  <link rel="canonical" href="https://enhance.withbyte.co/">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Enhance Clipboard - Clipboard History Manager for macOS">
   <meta property="og:description" content="Open clipboard history instantly, pin important snippets, and paste faster on macOS.">
-  <meta property="og:url" content="https://enhanceclipboard.com/">
+  <meta property="og:url" content="https://enhance.withbyte.co/">
   <meta property="og:site_name" content="Enhance Clipboard">
   <meta property="og:locale" content="en_US">
-  <meta property="og:image" content="https://enhanceclipboard.com/images/1.png">
+  <meta property="og:image" content="https://enhance.withbyte.co/images/1.png">
   <meta property="og:image:alt" content="Enhance Clipboard app window showing clipboard history on macOS">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Enhance Clipboard - Clipboard History Manager for macOS">
   <meta name="twitter:description" content="Fast, minimal clipboard history for macOS with keyboard-first workflow.">
   <meta name="twitter:site" content="@enhanceclipboard">
-  <meta name="twitter:image" content="https://enhanceclipboard.com/images/1.png">
+  <meta name="twitter:image" content="https://enhance.withbyte.co/images/1.png">
   <meta name="twitter:image:alt" content="Enhance Clipboard app window showing clipboard history on macOS">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div class="bg-orb orb-a"></div>
-  <div class="bg-orb orb-b"></div>
+  <div class="deco-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill="none" stroke="rgba(180, 160, 220, 0.45)" stroke-width="2.5" d="M0,180 C240,80 480,260 720,140 C960,20 1200,200 1440,100" />
+      <path fill="none" stroke="rgba(200, 185, 235, 0.35)" stroke-width="1.5" d="M0,220 C280,120 520,280 760,160 C1000,40 1240,220 1440,130" />
+    </svg>
+  </div>
 
-  <header class="nav glass">
-    <div class="brand">
-      <span class="brand-dot"></span>
-      <span>Enhance Clipboard</span>
-    </div>
-    <div class="nav-actions">
-      <a href="https://enhanceclipboard.com/updates/Enhance%20Clipboard-0.1.0.dmg">Download</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">Enhance Clipboard</span>
+      </div>
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="https://enhance.withbyte.co/updates/Enhance%20Clipboard-0.1.0.dmg">Download</a>
+      </div>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero glass reveal" data-reveal>
-      <p class="eyebrow">macOS Clipboard Manager</p>
-      <h1>Clipboard history that feels native.</h1>
-      <p class="subtitle">
-        Open your history instantly, navigate with keyboard, pin important snippets,
-        and paste exactly what you need.
-      </p>
-      <div class="hero-actions" id="download">
-        <a class="btn btn-primary" href="https://enhanceclipboard.com/updates/Enhance%20Clipboard-0.1.0.dmg">Download for macOS</a>
+  <main>
+    <section class="hero reveal" data-reveal>
+      <div class="hero-copy">
+        <p class="eyebrow">macOS clipboard manager</p>
+        <h1 class="hero-title">
+          Clipboard history that feels <em>native</em>.
+        </h1>
+        <p class="subtitle">
+          Open your history instantly, navigate with the keyboard, pin important snippets,
+          and paste exactly what you need—without leaving your flow.
+        </p>
+        <div class="hero-actions" id="download">
+          <a class="btn btn-primary" href="https://enhance.withbyte.co/updates/Enhance%20Clipboard-0.1.0.dmg">
+            <span class="hero-cta-label hero-cta-label--desktop">Get started</span>
+            <span class="hero-cta-label hero-cta-label--mobile">Download</span>
+          </a>
+        </div>
+        <p class="store-line">Free for Mac · Apple Silicon</p>
       </div>
-      <p class="hint">Current beta supports text and images.</p>
-    </section>
-
-    <section class="screenshots reveal" data-reveal>
-      <div class="screenshot-head">
-        <h2>App Screenshots</h2>
-        <p>A quick look at the core Enhance Clipboard experience.</p>
-      </div>
-      <div class="screenshot-grid">
-        <figure class="shot glass">
-          <img src="./images/1.png" alt="Enhance Clipboard main panel">
-        </figure>
-        <figure class="shot glass">
-          <img src="./images/2.png" alt="Settings window">
-        </figure>
-        <figure class="shot glass">
-          <img src="./images/3.png" alt="About window">
-        </figure>
+      <div class="hero-visual">
+        <div class="device-frame">
+          <img src="./images/1.png" alt="Enhance Clipboard main window on macOS" width="800" height="500" loading="eager">
+        </div>
       </div>
     </section>
 
-    <section id="features" class="features section-block section-features reveal" data-reveal>
-      <article class="card glass reveal" data-reveal>
-        <h3>Instant access</h3>
-        <p>Use your hotkey to open history right where you work.</p>
-      </article>
-      <article class="card glass reveal" data-reveal>
-        <h3>Keyboard-first</h3>
-        <p>Navigate with arrows, confirm with Enter, close with Esc.</p>
-      </article>
-      <article class="card glass reveal" data-reveal>
-        <h3>Clean UI</h3>
-        <p>Minimal glass design inspired by native macOS aesthetics.</p>
-      </article>
-      <article class="card glass reveal" data-reveal>
-        <h3>Pin & organize</h3>
-        <p>Keep important clips on top and clear old history quickly.</p>
-      </article>
-    </section>
+    <div class="content-slab">
+      <div class="container">
+        <section id="story" class="story-section reveal" data-reveal aria-labelledby="story-title">
+          <header class="story-head">
+            <p class="eyebrow">How it works</p>
+            <h2 id="story-title" class="story-title">A calm clipboard, <em>on call</em>.</h2>
+            <p class="story-lead">
+              Five quick notes on what Enhance Clipboard does, what it remembers,
+              and what it leaves alone.
+            </p>
+          </header>
 
-    <section class="screenshots section-block section-faq reveal" data-reveal aria-labelledby="faq-title">
-      <div class="screenshot-head">
-        <h2 id="faq-title">Frequently Asked Questions</h2>
-      </div>
-      <div class="faq-list">
-        <details class="faq-item reveal" data-reveal>
-          <summary>Is Enhance Clipboard free?</summary>
-          <p>Yes. Enhance Clipboard is free to download and use on macOS.</p>
-        </details>
-        <details class="faq-item reveal" data-reveal>
-          <summary>What can it save?</summary>
-          <p>Current beta supports text and images from your clipboard history.</p>
-        </details>
-        <details class="faq-item reveal" data-reveal>
-          <summary>How do I open clipboard history quickly?</summary>
-          <p>Use your configured global shortcut to open history and paste with keyboard navigation.</p>
-        </details>
-        <details class="faq-item reveal" data-reveal>
-          <summary>Which macOS versions are supported?</summary>
-          <p>Enhance Clipboard currently supports Apple Silicon Macs running current macOS versions.</p>
-        </details>
-      </div>
-    </section>
+          <div
+            class="text-slider"
+            data-text-slider
+            aria-roledescription="carousel"
+            aria-label="Five short notes about Enhance Clipboard"
+          >
+            <div class="text-slider-controls">
+              <button type="button" class="text-slider-btn text-slider-prev" aria-label="Previous note">
+                <span aria-hidden="true">‹</span>
+              </button>
+              <div
+                class="text-slider-viewport"
+                tabindex="0"
+                role="group"
+                aria-label="Notes about the app. Use arrow keys to change slide."
+              >
+                <div class="text-slider-track" id="text-slider-track">
+                  <div class="text-slider-slide" data-dot-label="Access">
+                    <article class="story-slide">
+                      <p class="story-eyebrow"><span class="story-num">01</span> Access</p>
+                      <h3 class="story-q">Open it from anywhere.</h3>
+                      <p class="story-a">A single shortcut brings up your clipboard wherever you're typing—no menu hunting, no app switching.</p>
+                    </article>
+                  </div>
+                  <div class="text-slider-slide" data-dot-label="Keyboard">
+                    <article class="story-slide">
+                      <p class="story-eyebrow"><span class="story-num">02</span> Keyboard</p>
+                      <h3 class="story-q">Stay on the keys.</h3>
+                      <p class="story-a">Arrows to browse, Enter to paste, Esc to dismiss. Your hands never leave the keyboard.</p>
+                    </article>
+                  </div>
+                  <div class="text-slider-slide" data-dot-label="Memory">
+                    <article class="story-slide">
+                      <p class="story-eyebrow"><span class="story-num">03</span> Memory</p>
+                      <h3 class="story-q">Text and images, remembered.</h3>
+                      <p class="story-a">Snippets, links, and screenshots—the beta keeps the things you actually reach for again.</p>
+                    </article>
+                  </div>
+                  <div class="text-slider-slide" data-dot-label="Organize">
+                    <article class="story-slide">
+                      <p class="story-eyebrow"><span class="story-num">04</span> Organize</p>
+                      <h3 class="story-q">Pin what matters. Clear the rest.</h3>
+                      <p class="story-a">Important clips stay on top. Old history disappears with a single keystroke when the list gets noisy.</p>
+                    </article>
+                  </div>
+                  <div class="text-slider-slide" data-dot-label="Privacy">
+                    <article class="story-slide">
+                      <p class="story-eyebrow"><span class="story-num">05</span> Privacy</p>
+                      <h3 class="story-q">Yours, on your Mac.</h3>
+                      <p class="story-a">History stays local. No account, no sync, no servers—and free on Apple Silicon.</p>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="text-slider-btn text-slider-next" aria-label="Next note">
+                <span aria-hidden="true">›</span>
+              </button>
+            </div>
+            <div class="text-slider-meta">
+              <span class="text-slider-counter" data-slider-counter aria-live="polite">01 / 05</span>
+              <div class="text-slider-dots" role="tablist" aria-label="Notes"></div>
+            </div>
+          </div>
 
-    <section class="screenshots section-block section-privacy reveal" data-reveal aria-labelledby="privacy-title">
-      <div class="screenshot-head">
-        <h2 id="privacy-title">Privacy</h2>
-        <p>Clipboard history is designed to stay simple, local, and under your control.</p>
+          <p class="story-tag" aria-label="Pricing and platform">
+            Free for macOS <span class="story-tag-sep" aria-hidden="true">·</span>
+            Apple Silicon <span class="story-tag-sep" aria-hidden="true">·</span>
+            Local-first
+          </p>
+        </section>
       </div>
-      <div class="privacy-grid">
-        <article class="privacy-item reveal" data-reveal>
-          <h3>Local-first storage</h3>
-          <p>Your clipboard history stays on your Mac and is not synced to external servers.</p>
-        </article>
-        <article class="privacy-item reveal" data-reveal>
-          <h3>No account required</h3>
-          <p>You can install and use Enhance Clipboard without creating an online account.</p>
-        </article>
-        <article class="privacy-item reveal" data-reveal>
-          <h3>Clear controls</h3>
-          <p>Pin important clips, remove entries quickly, and keep only what you need.</p>
-        </article>
-      </div>
-    </section>
+    </div>
   </main>
 
   <footer class="footer">
     <span>Enhance Clipboard</span>
-    <span class="footer-divider">•</span>
+    <span class="footer-divider">·</span>
     <span>Made for macOS</span>
+    <span class="footer-divider">·</span>
+    <span class="footer-credit">
+      <span class="footer-heart" aria-hidden="true">❤️</span> <a href="https://withbyte.co" rel="noopener noreferrer">withbyte.co</a>
+    </span>
   </footer>
-
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lightbox-close" id="lightbox-close" aria-label="Close preview">Close</button>
-    <img id="lightbox-image" alt="">
-  </div>
 
   <script type="application/ld+json">
     {
@@ -159,8 +182,8 @@
       "applicationSubCategory": "Clipboard Manager",
       "operatingSystem": "macOS (Apple Silicon)",
       "description": "Clipboard history manager for macOS with keyboard-first navigation and quick paste workflow.",
-      "url": "https://enhanceclipboard.com/",
-      "downloadUrl": "https://enhanceclipboard.com/updates/Enhance%20Clipboard-0.1.0.dmg",
+      "url": "https://enhance.withbyte.co/",
+      "downloadUrl": "https://enhance.withbyte.co/updates/Enhance%20Clipboard-0.1.0.dmg",
       "softwareVersion": "0.1.0",
       "offers": {
         "@type": "Offer",
@@ -168,46 +191,6 @@
         "priceCurrency": "USD",
         "availability": "https://schema.org/InStock"
       }
-    }
-  </script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is Enhance Clipboard free?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Enhance Clipboard is free to download and use on macOS."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What can it save?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Current beta supports text and images from your clipboard history."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I open clipboard history quickly?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Use your configured global shortcut to open history and paste with keyboard navigation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which macOS versions are supported?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Enhance Clipboard currently supports Apple Silicon Macs running current macOS versions."
-          }
-        }
-      ]
     }
   </script>
   <script src="./script.js"></script>
